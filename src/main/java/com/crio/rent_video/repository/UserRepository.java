@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 import com.crio.rent_video.model.User;
 
 @Repository
-public interface UserRepository extends JpaRepository<User, String> {
+public interface UserRepository extends JpaRepository<User, Long> {
 
     User findByEmail(String email);
 
